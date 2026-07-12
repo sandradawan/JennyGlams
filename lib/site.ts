@@ -21,16 +21,16 @@ export const site = {
     tiktok: "https://tiktok.com/@sugarplum8698",
   },
   about: {
-    heading: "The artist behind the brush",
+    heading: "The artist behind the glow",
     body: [
-      "Jenny is a Jos-based makeup artist with an eye for light, skin, and the kind of glow that photographs like a dream and lasts all night.",
-      "From intimate bridal mornings to high-energy editorial sets, every look starts with the person in the chair — their features, their story, the way they want to feel when they catch their reflection.",
-      "Beyond the brush, she teaches, collaborates with photographers, and builds looks that turn a good day into the day.",
+      "JennyGlams is the work of a Jos-based makeup artist who believes the best makeup never hides you — it reveals you. Every look begins with the skin: prepped, hydrated, and glowing, so what follows feels less like a mask and more like the most radiant version of yourself.",
+      "Her artistry moves easily between worlds — the quiet intimacy of a bride's morning, the colour and joy of an Owambe celebration, the drama of an editorial set. From a barely-there soft glam to a bold, camera-ready statement, Jenny reads each face for its light and builds a look designed to last from the first photo to the final dance.",
+      "Beyond the brush, she shares her craft through one-on-one masterclasses and collaborates with photographers and creatives across Nigeria. Time in her chair is meant to feel like an experience — unhurried, personal, and complete the moment you catch your reflection and smile.",
     ],
     stats: [
-      { value: "300+", label: "Faces beat" },
-      { value: "6 yrs", label: "Behind the brush" },
-      { value: "80+", label: "Brides glowing" },
+      { value: "Bridal", label: "Weddings & trials" },
+      { value: "Glam", label: "Soft to full" },
+      { value: "Editorial", label: "Shoots & sets" },
     ],
   },
   services: [
