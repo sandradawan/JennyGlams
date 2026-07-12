@@ -6,6 +6,11 @@
 export const site = {
   name: "JennyGlams",
   artist: "Jenny",
+  founderName: "Jennifer Jesse",
+  founderRole: "Founder & CEO",
+  // Her portrait: save the photo in the /public folder and set its path here.
+  // Until that file exists, an elegant placeholder shows automatically — no broken image.
+  portrait: "/jennifer.jpg",
   tagline: "Makeup Artistry",
   heroLine: "Where every face becomes editorial.",
   intro:
@@ -23,7 +28,7 @@ export const site = {
   about: {
     heading: "The artist behind the glow",
     body: [
-      "JennyGlams is the work of a Jos-based makeup artist who believes the best makeup never hides you — it reveals you. Every look begins with the skin: prepped, hydrated, and glowing, so what follows feels less like a mask and more like the most radiant version of yourself.",
+      "JennyGlams is the vision of Jennifer Jesse — a Jos-based makeup artist and the founder behind the brand. She believes the best makeup never hides you; it reveals you. Every look begins with the skin: prepped, hydrated, and glowing, so what follows feels less like a mask and more like the most radiant version of yourself.",
       "Her artistry moves easily between worlds — the quiet intimacy of a bride's morning, the colour and joy of an Owambe celebration, the drama of an editorial set. From a barely-there soft glam to a bold, camera-ready statement, Jenny reads each face for its light and builds a look designed to last from the first photo to the final dance.",
       "Beyond the brush, she shares her craft through one-on-one masterclasses and collaborates with photographers and creatives across Nigeria. Time in her chair is meant to feel like an experience — unhurried, personal, and complete the moment you catch your reflection and smile.",
     ],

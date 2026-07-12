@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ArtImage from "@/components/ArtImage";
+import PortraitImage from "@/components/PortraitImage";
 import LookCard from "@/components/LookCard";
 import Reveal from "@/components/Reveal";
 import BookButton from "@/components/BookButton";
@@ -116,7 +117,12 @@ export default async function HomePage() {
       <section className="relative z-10 bg-cream-deep py-20 sm:py-28">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="relative aspect-[4/5] w-full max-w-sm overflow-hidden rounded-[6px] shadow-soft">
-            <ArtImage tone={["#e6d3ad", "#b0894f"]} alt={`${site.artist}, makeup artist`} />
+            <PortraitImage
+              src={site.portrait}
+              tone={["#e6d3ad", "#b0894f"]}
+              alt={`${site.founderName}, ${site.founderRole} of ${site.name}`}
+              label={site.founderName}
+            />
           </div>
           <div>
             <p className="eyebrow">The artist</p>

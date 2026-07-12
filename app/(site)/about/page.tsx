@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import ArtImage from "@/components/ArtImage";
+import PortraitImage from "@/components/PortraitImage";
 import Reveal from "@/components/Reveal";
 import BookButton from "@/components/BookButton";
 import { fromPrice, site } from "@/lib/site";
@@ -16,11 +16,12 @@ export default function AboutPage() {
       <section className="mx-auto max-w-6xl px-5 sm:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-[1fr_1fr]">
           <div className="relative order-2 aspect-[4/5] w-full max-w-md overflow-hidden rounded-[6px] shadow-lift lg:order-1">
-            <ArtImage
+            <PortraitImage
+              src={site.portrait}
               tone={["#f2ded8", "#c07c76"]}
-              alt={`${site.artist}, makeup artist`}
+              alt={`${site.founderName}, ${site.founderRole} of ${site.name}`}
               priority
-              label={site.artist}
+              label={site.founderName}
             />
           </div>
           <div className="order-1 lg:order-2">
@@ -28,7 +29,14 @@ export default function AboutPage() {
             <h1 className="display mt-4 text-5xl sm:text-6xl">
               {site.about.heading}
             </h1>
-            <div className="mt-7 space-y-5 text-[1.02rem] leading-relaxed text-ink-soft">
+            <p className="mt-4 font-serif text-xl font-light">
+              {site.founderName}
+              <span className="text-muted">
+                {" "}
+                — {site.founderRole}, {site.name}
+              </span>
+            </p>
+            <div className="mt-6 space-y-5 text-[1.02rem] leading-relaxed text-ink-soft">
               {site.about.body.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
