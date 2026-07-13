@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
 import BookButton from "./BookButton";
+import Logo from "./Logo";
 
 export default function SiteFooter() {
   return (
@@ -8,10 +9,10 @@ export default function SiteFooter() {
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8">
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
-            <p className="font-serif text-2xl font-light">{site.name}</p>
-            <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted">
-              {site.tagline} — based in {site.location}. Booking brides, editorials,
-              and everyday glow.
+            <Logo align="start" />
+            <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted">
+              Bridal, soft glam, and editorial looks — based in {site.location}.
+              Booking brides, editorials, and everyday glow.
             </p>
             <div className="mt-6">
               <BookButton
