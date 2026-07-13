@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { site } from "@/lib/site";
+import Logo from "./Logo";
 
 const nav = [
   { href: "/", label: "Home" },
@@ -40,13 +41,8 @@ export default function SiteHeader() {
       }`}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:h-20 sm:px-8">
-        <Link href="/" className="group flex items-baseline gap-2">
-          <span className="font-serif text-xl font-light tracking-tight sm:text-2xl">
-            {site.name}
-          </span>
-          <span className="hidden text-[0.6rem] uppercase tracking-[0.3em] text-gold sm:inline">
-            {site.tagline}
-          </span>
+        <Link href="/" aria-label={`${site.name} — home`} className="group">
+          <Logo variant="compact" align="start" />
         </Link>
 
         {/* desktop nav */}
